@@ -1,0 +1,51 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table{
+    border-spacing: 0; /*Espacio entre las tablas*/
+    border-collapse: collapse;
+    width: 800px;
+    margin: 100px auto;
+}
+
+td,
+th {
+    border: double 1px #ccc;
+    padding: 5px;
+}
+
+tr:nth-child(even){
+    background-color: #d2d1d4;
+    
+}
+
+td:nth-child(n + 3), 
+th:nth-child(n + 3){
+    
+    text-align: center;
+}
+
+/*(n + 3), n es un indice y se esta realizando es una pequeña ecuación y lo que hara sería que iluminara a partir de la posición n + 3, pensando que n = 0, entonces desde la posición tres hasta terminar todo el contenido de las columnas va estar alineado al centro */
+
+
+tbody tr:hover{
+    background-color: aqua !important;
+}
+
+thead{
+    background-color: grey;
+    color: aliceblue;
+    position: sticky;
+    top: 0;
+}
+
+caption{
+    padding-bottom: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: underline;
+}
