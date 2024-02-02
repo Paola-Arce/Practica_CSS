@@ -1,0 +1,170 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(58,57,32);
+    background: radial-gradient(circle, rgba(58,57,32,1) 0%, rgba(128,118,34,1) 0%, rgba(234,167,36,1) 71%, rgba(240,133,52,0.5410539215686274) 98%);
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    width: 75%;
+    overflow: hidden;
+    height: 90%;
+    border: 2px solid #1a1919;
+    background-color: rgb(241, 199, 174);
+
+}
+
+.form-container .login-container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.form-container .login-container > h2 { 
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.form-container .login-container > p,
+.form-container .login-container > span { 
+    text-align: center;
+    color: #2b1d1d;
+}
+
+.form-container .login-container label {
+    display: block;
+    font-weight: bold;
+    padding: 5px 0 5px 0;
+}
+
+.form-container .login-container input.input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.form-container .login-container input.input:focus {
+    outline: 3px solid rgb(236, 184, 159);
+}
+
+.form-container .login-container .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-container a {
+    color: rgb(146, 50, 12);
+    text-decoration: none;
+}
+
+.form-container a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: bolder;
+    display: block;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn.btn-login {
+    background-color: #8db94a;
+}
+
+.btn.btn-google {
+    color: #0a0a0a;
+    border: 2px solid black;
+}
+
+.btn.btn-facebook {
+    background-color:#0404f7;
+    color: azure;
+    border: 2px solid black;
+}
+
+.btn.btn-twitter {
+    background-color:#3573cf;
+    color: azure;
+    border: 2px solid black
+}
+
+.form-container .login-container .providers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.btn.btn-login:hover {
+    background-color: #c6e697;
+}
+
+.btn.btn-google:hover {
+    background-color: #9e9ea7;
+}
+
+.btn.btn-facebook:hover {
+    background-color: #2b2b63;
+}
+
+.btn.btn-twitter:hover {
+    background-color: #081e3fea;
+}
+
+.form-container .welcome-screen-container {
+    height: 100%;
+    width: 50%;
+}
+
+.form-container .welcome-screen-container img {
+    height: 100%;
+    width: 100%;
+    opacity: .8 ;
+}
+
+@media screen and (max-width: 1357px ) {
+    .form-container {
+        width: 95%;
+    }
+
+    .form-container .login-container {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .form-container .welcome-screen-container {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 900px ){
+    .form-container {
+        width: 60%;
+    }
+
+    .form-container .login-container {
+        width: 350px;
+        margin: 0 auto;
+    }
+    .form-container .welcome-screen-container {
+        
+        display: none;
+    }
+}
