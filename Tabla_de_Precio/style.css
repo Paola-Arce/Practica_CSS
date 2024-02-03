@@ -113,12 +113,12 @@ body {
 }
 
 .price-table-container .table .btn.recommended {
-    background-color:#5b5bdb;
+    background-color:#080894cc;
     color: wheat;
     border: 2px solid #3a3636;
 }
 
 .price-table-container .table .btn.recommended:hover {
-    background-color: rgb(130, 216, 231);
+    background-color: rgb(106, 112, 197);
     color: black;
 }
