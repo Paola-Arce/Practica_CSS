@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Progreso Barra</title>
+</head>
+<body>
+    <div class="progressbar-container">
+        <div class="outer-box">
+            <div class="inner-box">50%</div>
+            <!--elementos para hacer una barra circular-->
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200" height="200">
+            <defs> <!-- esta etiqueta esa haciendo una definición, esto como una variable un valor que se puede ocupar posteriormente-->
+                <linearGradient id="gradientColor">
+                    <stop offset="0%" stop-color="#e91e63"/>
+                    <stop offset="100%" stop-color="#673ab7"/>
+                </linearGradient>
+            </defs>
+            <circle cx="100" cy="100" r="80px" stroke-linecap="round" /> 
+            <!--la propiedad "cx" es la  que se va encargar de posicionar el eje x donde va estar el punto a partir del cual se va dibujar el circulo y "cy" para el eje y, también esta el radio que es con la propuedad "r", la priedad stroke-linecap, permite dibujar la punto y puede ser cuadrada pero en este caso es redonde y la se le agrega "round"-->
+            </svg>
+        </div>
+    </div>
+</body>
+</html>

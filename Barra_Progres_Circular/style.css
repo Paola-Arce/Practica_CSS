@@ -1,0 +1,50 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: blueviolet;
+}
+
+.progressbar-container {
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+}
+
+.progressbar-container .outer-box{
+    border-radius: 50%;
+    background-color: azure;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressbar-container .inner-box {
+    font-size: 24px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressbar-container svg {
+    position: absolute;
+}
+
+.progressbar-container circle {
+    fill: none;
+    stroke: url(#gradientColor); /*efecto de borde o trazo*/
+    stroke-width: 20px;
+    stroke-dasharray: 550;/*permite medir la distancia entre los puntos que conforma el strocke o traso*/
+    stroke-dashoffset: 550; /*permite especificar la distancia que hay entre inicio del trazo y donde se desea que empiece */
+    animation: loading 10s linear forwards;
+}
+
+@keyframes loading {
+    
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
