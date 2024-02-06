@@ -1,0 +1,64 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  color:aliceblue;  
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+    padding: 100px;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none; /*con esto no se puede seleccionar elementos*/
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    
+}
+
+.checkbox-container .check-mark {
+    position: absolute;
+    border-radius: 3px;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #afb3b3;
+    transition: all 0.3s ease-in-out;
+}
+
+.checkbox-container input:checked ~.check-mark {
+    background-color: #7bcae2;
+}
+
+.checkbox-container input:checked ~.check-mark .material-symbols-outlined {
+    transform: scale(1);
+}
+
+
+.checkbox-container input:checked ~.check-mark.radio .material-symbols-outlined {
+    position: absolute;
+    border-radius: 50%;
+    top: 0px;
+    left: 0px;
+    width: 25px;
+    height: 25px;
+    background-color: #679c9c;
+    transition: all 0.3s ease-in-out;
+} 
