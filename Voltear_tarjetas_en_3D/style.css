@@ -22,7 +22,7 @@ body {
     height: 100%;
     width: 100%;
     text-align: center;
-    transition: trasnform 10s ease-in-out;
+    transition: trasnform 1s ease-in-out;
     transform-style: preserve-3d;
 }
 
@@ -45,12 +45,12 @@ body {
 }
 
 .cards .flip-card .flip-card-back {
-    background-color: rgb(197, 153, 238);
+    background-color: #a38ab9;
     color: antiquewhite;
     transform: rotateY(180deg);
 }
 
 .cards .flip-card .flip-card-front img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
 }
