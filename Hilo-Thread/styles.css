@@ -1,0 +1,103 @@
+:root{
+    --border-color:#558bff;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #03043bc4;
+}
+
+.comments-container {
+    width: 800px;
+    margin: 100px auto;
+    color: #fffdfa;
+}
+
+.comments-container > .comment {
+    margin-bottom: 10px;
+}
+
+.comments-container .comment {
+    display: flex;
+    width: 100%;
+}
+
+.comments-container .comment .comment-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.comments-container .comment .line {
+    position: relative;
+    width: 15px;
+    height: 59%;
+    border-left: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 0 0 0 8px;
+}
+
+.comments-container .comment .comment-wrapper .content {
+    display: flex;
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    border-radius: 10px;
+    background: #5f83d1b0;
+}
+
+.comments-container .comment .replies {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0 15px 35px;
+}
+
+.comments-container .comment .replies::before {
+    content: "";
+    position: absolute;
+    background-color: var(--border-color);
+    width: 1px;
+    top: 0;
+    height: calc(100% - 98px); /*Aquí se da el largo de la linea*/
+}
+
+.comments-container .comment .comment-wrapper .content img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding-right: 10px;
+}
+
+.comments-container .comment .comment-wrapper .content .comment-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.comments-container .comment .comment-wrapper .content .comment-info .header .username {
+    font-weight: bold;
+}
+
+.comments-container .comment .comment-wrapper .content .comment-info .header .date {
+    color: #020227a1;
+}
+
+.comments-container .comment .comment-wrapper .content .comment-info .actions {
+    display: flex;
+    gap: 5px;
+}
+
+.comments-container .comment .comment-wrapper .content .comment-info .actions button {
+    border: none;
+    background-color: transparent;
+    color: #020227a1;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.comments-container .comment .comment-wrapper .content .comment-info .actions button:hover {
+    color: azure;
+    background-color: var(--border-color);
+}
