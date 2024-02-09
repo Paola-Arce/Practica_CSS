@@ -1,0 +1,71 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #beddeb;
+}
+
+.people-container {
+    margin: 100px auto;
+    width: 500px;
+    display: flex;
+}
+
+.people-container .people {
+    position: relative;
+    margin-right: -20px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.people-container .people img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #f5f5f5;
+    transition: transform 0.3s ease-in-out;
+}
+
+.people-container .people:hover img {
+    transform: translateY(-5px)
+}
+
+.people-container .people .name {
+    position: absolute;
+    background-color: #1b1b1b;
+    color:#ffffff;
+    padding: 10px 15px;
+    min-width: 100px;
+    width: 150px;
+    top: -60px;
+    left: calc((100% + 12px)* -1);
+    border-radius: 6px;
+    border: 1px solid #ffffff;
+    display: none;
+}
+
+.people-container .people:hover .name{
+    display: inline-block;
+}
+
+.people-container .people .name .text {
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+    width: 120px;
+}
+
+.people-container .people .name::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #1b1b1b ;
+    border-bottom: 10px solid transparent;
+    border-left:  10px solid transparent;
+    border-right: 10px solid transparent;
+    left: 45%;
+    bottom: -20px;
+}
