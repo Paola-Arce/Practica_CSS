@@ -26,7 +26,7 @@ body {
     transform-style: preserve-3d;
 }
 
-.cards .flip-card:hover .flip-card-inner{
+.cards .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
